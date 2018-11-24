@@ -1,0 +1,61 @@
+body {
+  font-family: "Arial";
+}
+
+#result {
+  text-align: right;
+  background-color: #59A2C2;
+  border: 2px solid black;
+  padding: 5px;
+  font-size: 36px;
+}
+
+button {
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 16px;
+  border: 2px solid black;
+}
+
+button.number {
+  background-color: #6F5ACF;
+}
+
+button.number:hover {
+  background-color: #82771F;
+}
+
+button.operator {
+  background-color: #597AD9;
+}
+
+button.operator:hover {
+  background-color: #8C6D1E;
+}
+
+@media(max-width: 800px) {
+  button.number {
+    background-color: #5EE898;
+  }
+
+  button.number:hover {
+    background-color: #E8804A;
+  }
+
+  body {
+    animation: AnimatedGradient 10s linear infinite;
+  }
+  @keyframes AnimatedGradient {
+    0%{background-color: red}
+    10%{background-color: orange}
+    20%{background-color: yellow}
+    30%{background-color: yellowgreen}
+    40%{background-color: green}
+    50%{background-position:teal}
+    60%{background-color: dodgerblue}
+    70%{background-color: blue}
+    80%{background-color: indigo}
+    90%{background-color: purple}
+    100%{background-color: pink}
+  }
+}
