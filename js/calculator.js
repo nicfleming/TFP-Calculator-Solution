@@ -32,11 +32,14 @@ function digitPressed(number) {
     document.prevOp = '+';
     document.newValue = number;
   } else {
+    console.log('document.newValue: ' + document.newValue);
     var newVal = document.newValue * 10 + number;
     if (newVal > 1000000 || newVal < -1000000) {
       return;
     }
     document.newValue = newVal;
+    console.log("newval: " + newVal);
+    console.log("number: " + number);
   }
   updateResult(document.newValue);
 }
